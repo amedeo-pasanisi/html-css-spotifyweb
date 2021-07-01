@@ -1,43 +1,67 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* generale */
-.clearfix{
+.clearfix::after {
     content:"";
     display: table;
     clear: both;
 }
 /* fine generale */
 
-.wrapper{
+.wrapper {
     height: 100vh;
 }
 
 /* main */
-main{
+main {
     height: calc(100% - 100px);
 }
+
+/* nav */
+main nav {
+    float: left;
+    height: 100%;
+    width: 25%;
+}
+/* FINE nav */
+
+/* main section */
+main section{
+    float: left;
+    height: 100%;
+    width: 75%;
+}
+/* FINE main section */
 /* FINE main */
 
 /* footer */
-footer{
+footer {
     height: 100px;
 }
 /* FINE footer */
 
 /* debug */
-.debug .wrapper{
+.debug .wrapper {
     background-color: lightgray;
 }
 
-.debug main{
+.debug main {
     background-color: gray;
 }
 
-.debug footer{
+.debug footer {
     background-color: lightseagreen;
+}
+
+.debug main nav {
+    background-color: lightskyblue;
+}
+
+.debug main section{
+    background-color: lightslategray;
 }
 /* fine debug */
