@@ -26,6 +26,22 @@ main nav {
     float: left;
     height: 100%;
     width: 200px;
+
+    position: relative;
+}
+
+.logo{
+    padding: 20px;
+}
+
+.logo img{
+    height: 100%;
+}
+
+.account{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 /* FINE nav */
 
@@ -40,8 +56,12 @@ main section{
 
 /* footer */
 footer {
+    display: flex;
+    justify-content: space-between;
     height: 100px;
 }
+
+
 /* FINE footer */
 
 @media screen and (max-width: 600px) {
@@ -73,5 +93,19 @@ footer {
 
 .debug main section{
     background-color: lightslategray;
+}
+
+.debug .logo,.debug .home,.debug .playlist,.debug .account{
+    background-color: mediumblue;
+    border: 1px solid salmon;
+    height: 80px;
+}
+
+.debug .title,.debug .player,.debug .volume{
+    background-color: mediumblue;
+    border: 1px solid salmon;
+
+    height: 100%;
+    width: 300px;
 }
 /* fine debug */
