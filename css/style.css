@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* generale */
+.clearfix{
+    content:"";
+    display: table;
+    clear: both;
+}
+/* fine generale */
+
+.wrapper{
+    height: 100vh;
+}
+
+/* main */
+main{
+    height: calc(100% - 100px);
+}
+/* FINE main */
+
+/* footer */
+footer{
+    height: 100px;
+}
+/* FINE footer */
+
+/* debug */
+.debug .wrapper{
+    background-color: lightgray;
+}
+
+.debug main{
+    background-color: gray;
+}
+
+.debug footer{
+    background-color: lightseagreen;
+}
+/* fine debug */
