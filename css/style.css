@@ -117,13 +117,32 @@ main nav {
 
     .nav-top .playlist ul{
         list-style: none;
-        padding: 15px;
+        padding: 15px 15px 0 15px;
         height: calc(100% - 60px);
         overflow-y: auto;
     }
 
     .nav-top .playlist ul li{
         padding-bottom: 10px;
+    }
+
+    .nav-top .playlist ul li:last-child{
+        padding-bottom: 0;
+    }
+
+    /* scrollbar */
+    ::-webkit-scrollbar {
+        width: 7px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: none;
+    }
+    
+    /* maniglia scrollbar */
+    ::-webkit-scrollbar-thumb {
+        background: white;
+        border-radius: 5px;
     }
 /* FINE nav-top */
 
