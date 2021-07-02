@@ -18,7 +18,7 @@
 
 /* main */
 main {
-    height: calc(100% - 100px);
+    height: calc(100% - 90px);
 }
 
 /* nav */
@@ -26,8 +26,17 @@ main nav {
     float: left;
     height: 100%;
     width: 200px;
+    min-height: 480px;
+    background-color: black;
+}
 
-    position: relative;
+.nav-top{
+    height: calc(100% - 80px);
+}
+
+.nav-bottom{
+    height: 80px;
+    width: 100%;
 }
 
 .logo{
@@ -36,12 +45,6 @@ main nav {
 
 .logo img{
     height: 100%;
-}
-
-.account{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 /* FINE nav */
 
@@ -56,9 +59,12 @@ main section{
 
 /* footer */
 footer {
+    position: fixed;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
-    height: 100px;
+    height: 90px;
+    width: 100%;
 }
 
 
@@ -83,22 +89,25 @@ footer {
     background-color: gray;
 }
 
-.debug footer {
-    background-color: lightseagreen;
+.debug .nav-top{
+    background-color: coral;
 }
 
-.debug main nav {
-    background-color: lightskyblue;
-}
-
-.debug main section{
-    background-color: lightslategray;
+.debug .nav-bottom{
+    background-color: red;
 }
 
 .debug .logo,.debug .home,.debug .playlist,.debug .account{
     background-color: mediumblue;
     border: 1px solid salmon;
     height: 80px;
+}
+.debug main section{
+    background-color: lightslategray;
+}
+
+.debug footer {
+    background-color: lightseagreen;
 }
 
 .debug .title,.debug .player,.debug .volume{
