@@ -150,6 +150,28 @@ main nav {
     .nav-bottom{
         height: 80px;
         width: 100%;
+        padding: 0 15px;
+    }
+
+    .download{
+        line-height: 38px;
+        border-bottom: 2px solid white;
+    }
+
+    .user{
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .user img{
+        height: 60%;
+        vertical-align: middle;
+        background-color: gray;
+        border-radius: 50%;
+    }
+
+    .user span{
+        font-weight: bold;
     }
 /* FINE nav-bottom */
 /* FINE nav */
