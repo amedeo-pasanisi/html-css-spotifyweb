@@ -34,7 +34,7 @@ main {
 }
 
 /* nav */
-main nav {
+main>nav {
     float: left;
     height: 100%;
     width: 200px;
@@ -94,7 +94,7 @@ main nav {
         padding: 0 0 10px 15px;
     }
 
-    .nav-top .playlist .crea{
+    .nav-top .playlist .crea {
         display: flex;
         align-items: center;        
     }
@@ -126,7 +126,7 @@ main nav {
         padding-bottom: 10px;
     }
 
-    .nav-top .playlist ul li:last-child{
+    .nav-top .playlist ul li:last-child {
         padding-bottom: 0;
     }
 
@@ -181,10 +181,66 @@ main nav {
 /* FINE nav */
 
 /* main section */
-main section {
+main>section {
     float: left;
     height: 100%;
     width: calc(100% - 200px);
+    background-color: #141922;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+main section h2 {
+    margin-bottom: 10px;
+}
+
+main section h3 {
+    margin: 20px 0 10px 0;
+}
+
+main section>nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0 30px 0;
+}
+
+main section>nav a {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 30px;
+    text-decoration: none;
+    color: gray;
+    font-weight: 600;
+}
+
+main section .items {
+    display: flex;
+    padding: 20px 0;
+}
+
+main section .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    margin: 0 5px;
+}
+
+main section .item .img {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+main section .item img {
+    display: flex;
+    width: 100%;
+}
+
+main .recently-played .items {
+    justify-content: space-between;
 }
 /* FINE main section */
 /* FINE main */
@@ -227,7 +283,7 @@ footer {
         height: 50%;
     }
 
-    .player-center .top i{
+    .player-center .top i {
         margin: 0 10px;
     }
 
@@ -301,7 +357,7 @@ footer {
 /* FINE footer */
 
 @media screen and (max-width: 600px) {
-    main nav {
+    main>nav {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -309,7 +365,7 @@ footer {
         width: 50px;
     }
 
-    main nav .nav-top,main nav .nav-bottom {
+    main>nav .nav-top,main nav .nav-bottom {
         display: none;
     }
 
@@ -344,7 +400,7 @@ footer {
         border-radius: 50%;
     }
 
-    main section {
+    main>section {
         width: calc(100% - 50px);
     }    
 }
