@@ -115,14 +115,14 @@ main nav {
         font-size: 15px;
     }
 
-    .nav-top .playlist ul{
+    .nav-top .playlist ul {
         list-style: none;
         padding: 15px 15px 0 15px;
         height: calc(100% - 60px);
         overflow-y: auto;
     }
 
-    .nav-top .playlist ul li{
+    .nav-top .playlist ul li {
         padding-bottom: 10px;
     }
 
@@ -147,41 +147,41 @@ main nav {
 /* FINE nav-top */
 
 /* nav-bottom */
-    .nav-bottom{
+    .nav-bottom {
         height: 80px;
         width: 100%;
         padding: 0 15px;
     }
 
-    .download{
+    .download {
         line-height: 38px;
         border-bottom: 2px solid white;
     }
 
-    .user{
+    .user {
         height: 40px;
         line-height: 40px;
     }
 
-    .user img{
+    .user img {
         height: 60%;
         vertical-align: middle;
         background-color: gray;
         border-radius: 50%;
     }
 
-    .user span{
+    .user span {
         font-weight: bold;
     }
 /* FINE nav-bottom */
 
-.nav-xs-top,.nav-xs-bottom{
+.nav-xs-top,.nav-xs-bottom {
     display: none;
 }
 /* FINE nav */
 
 /* main section */
-main section{
+main section {
     float: left;
     height: 100%;
     width: calc(100% - 200px);
@@ -195,11 +195,54 @@ footer {
     bottom: 0;
     display: flex;
     justify-content: space-between;
+    background-color: rgb(59, 59, 59);
     height: 90px;
     width: 100%;
 }
 
+.player-left,.player-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 200px;
+    min-width: 150px;
+}
 
+.player-center {
+    height: 100%;
+    width: 40%;
+    min-width: 150px;
+}
+
+/* player-left */
+    .player-left .album {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .player-left .album-img {
+        width: 50px;
+        height: 50px;
+        margin: 0 10px;
+    }
+
+    .player-left .album-img img {
+        width: 100%;
+        vertical-align: middle;
+    }
+
+    .player-left .title .author {
+        font-size: 10px;
+    }
+    .player-left .icons i {
+        margin-right: 10px;
+    }
+/* FINE player-left */
+
+/* player-right */
+/* FINE player-right */
 /* FINE footer */
 
 @media screen and (max-width: 600px) {
@@ -215,7 +258,7 @@ footer {
         display: none;
     }
 
-    .nav-xs-top,.nav-xs-bottom{
+    .nav-xs-top,.nav-xs-bottom {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -223,23 +266,23 @@ footer {
         width: 100%;
     }
 
-    .nav-xs-top{
+    .nav-xs-top {
         height: 160px;
     }
 
-    .nav-xs-bottom{
+    .nav-xs-bottom {
         height: 90px;
     }
 
-    .nav-xs-top img{
+    .nav-xs-top img {
         width: 60%;
     }
 
-    .nav-xs-bottom i{
+    .nav-xs-bottom i {
         font-size: 20px;
     }
 
-    .nav-xs-bottom img{
+    .nav-xs-bottom img {
         width: 30px;
         height: 30px;
         background-color: gray;
@@ -260,39 +303,32 @@ footer {
     background-color: gray;
 }
 
-.debug .nav-top{
+.debug .nav-top {
     background-color: coral;
 }
 
-.debug .nav-bottom{
+.debug .nav-bottom {
     background-color: red;
 }
 
-.debug .logo,.debug .home,.debug .playlist,.debug .account{
+.debug .logo,.debug .home,.debug .playlist,.debug .account {
     background-color: mediumblue;
 }
 
-.debug .nav-top .home>div{
+.debug .nav-top .home>div {
     background-color: burlywood;
 }
 
-.debug .nav-top .playlist ul{
+.debug .nav-top .playlist ul {
     background-color: green;
 }
 
-.debug main section{
+.debug main section {
     background-color: lightslategray;
 }
 
-.debug footer {
-    background-color: lightseagreen;
-}
-
-.debug .title,.debug .player,.debug .volume{
-    background-color: mediumblue;
-    border: 1px solid salmon;
-
-    height: 100%;
-    width: 300px;
+.debug .player-left,.debug .player-right, .debug .player-center {
+    background-color: rgb(129, 129, 129);
+    border: 1px solid black;
 }
 /* fine debug */
