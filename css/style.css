@@ -206,6 +206,7 @@ main>section>.upgrade {
     background-color: rgba(0, 0, 0, 0.425);
     height: 70px;
     width: calc(100% - 200px);
+    z-index: 1;
 }
 
 main>section>.upgrade>.button {
@@ -265,6 +266,7 @@ main section .item {
     text-align: center;
     width: calc((100% / 6) - 10px);
     margin-right: 10px;
+    margin-bottom: 20px;
 }
 
 main section .item .img {
@@ -437,7 +439,27 @@ footer {
 /* FINE player-right */
 /* FINE footer */
 
+@media screen and (max-width: 1000px) {
+    main section .items {
+        flex-wrap: wrap;
+    }
+
+    main section .item {
+        width: calc((100% / 4) - 10px);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    main section .item {
+        width: calc((100% / 2) - 10px);
+    }
+}
+
 @media screen and (max-width: 600px) {
+    .xs-display-none {
+        display: none;
+    }
+
     main>nav {
         display: flex;
         flex-direction: column;
@@ -446,8 +468,8 @@ footer {
         width: 50px;
     }
 
-    main>nav .nav-top,main nav .nav-bottom {
-        display: none;
+    main>section>.upgrade {
+        width: calc(100% - 50px);
     }
 
     .nav-xs-top,.nav-xs-bottom {
