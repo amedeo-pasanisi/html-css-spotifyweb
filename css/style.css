@@ -19,8 +19,28 @@
     filter: brightness(0.9);
 }
 
+.color-gray:hover, .color-lightgray:hover {
+    filter: none;
+    cursor: pointer;
+}
+
 .display-none {
     display: none;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+/* maniglia scrollbar */
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 5px;
 }
 /* fine generale */
 
@@ -133,21 +153,6 @@ main>nav {
     .nav-top .playlist ul li:last-child {
         padding-bottom: 0;
     }
-
-    /* scrollbar */
-    ::-webkit-scrollbar {
-        width: 7px;
-    }
-    
-    ::-webkit-scrollbar-track {
-        background: none;
-    }
-    
-    /* maniglia scrollbar */
-    ::-webkit-scrollbar-thumb {
-        background: white;
-        border-radius: 5px;
-    }
 /* FINE nav-top */
 
 /* nav-bottom */
@@ -232,8 +237,8 @@ main>section>nav a {
     align-items: center;
     padding: 0 20px;
     height: 30px;
+    color: white;
     text-decoration: none;
-    color: gray;
     font-weight: 600;
 }
 
@@ -244,6 +249,11 @@ main section h2 {
 main section h3 {
     margin: 20px 0 10px 0;
 }
+
+main section h4 {
+    color: gray;
+}
+
 main section .items {
     display: flex;
     padding: 20px 0;
