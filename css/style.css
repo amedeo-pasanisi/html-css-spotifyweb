@@ -18,6 +18,10 @@
 .color-lightgray {
     filter: brightness(0.9);
 }
+
+.display-none {
+    display: none;
+}
 /* fine generale */
 
 .wrapper {
@@ -247,12 +251,38 @@ main section .item {
 }
 
 main section .item .img {
-    border-radius: 50%;
-    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+main section .item .img:hover .display-none {
+    display: block;
 }
 
 main section .item img {
     width: 100%;
+}
+
+main section .item .img .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.562);
+    height: 100%;
+    width: 100%;
+}
+
+main section .item .img .overlay i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+
+main .artisti .item .img {
+    border-radius: 50%;
+    overflow: hidden;
 }
 /* FINE main section */
 /* FINE main */
