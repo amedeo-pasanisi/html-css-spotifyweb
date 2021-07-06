@@ -214,6 +214,11 @@ main>section>.upgrade>.button {
     padding: 0 20px;
 }
 
+main>section>.upgrade>.button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 main>section>nav {
     display: flex;
     flex-wrap: wrap;
@@ -257,6 +262,7 @@ main section .item .img {
 
 main section .item .img:hover .display-none {
     display: block;
+    cursor: pointer;
 }
 
 main section .item img {
