@@ -239,9 +239,9 @@ main>section>nav a {
 
 main>section>nav .lime {
     width: 70%;
+    margin: auto;
     height: 2px;
     background-color: lime;
-    display: inline-block;
     text-align: center;
 }
 
